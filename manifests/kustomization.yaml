@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+  - deployment-definitions/postgres-deploy.yaml
+  - deployment-definitions/redis-deploy.yaml
+  - deployment-definitions/result-app-deploy.yaml
+  - deployment-definitions/voting-app-deploy.yaml
+  - deployment-definitions/worker-app-deploy.yaml
+  - pod-definitions/postgress-pod.yaml
+  - pod-definitions/redis-pod.yaml
+  - pod-definitions/result-app-pod.yaml
+  - pod-definitions/voting-app-pod.yaml
+  - pod-definitions/worker-app-pod.yaml
+  - service-definitions/postgres-service.yaml
+  - service-definitions/redis-service.yaml
+  - service-definitions/result-app-service.yaml
+  - service-definitions/voting-app-service.yaml
+
+  
+  
